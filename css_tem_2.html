@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>webpge</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .part1{
+      width: 100%;
+      height: 900px;
+      position:relative;
+      background-color: aqua;
+    }
+    .image{
+      width: 100%;
+      height: 900px;
+    }
+    .image img{
+      width: 100%;
+      height: 100%;
+    }
+    .hed{
+      width: 100%;
+      height: 50px;
+      background-color: black;
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    .hed1{
+      display: flex;
+      justify-content: space-between;
+      width: 35%;
+      padding-top: 1%;
+      color: white;
+      padding-left: 1%;
+    }
+    .hed2{
+      width: 5%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hed2 img{
+      width: 30%;
+      height: 60%;
+    }
+    .hed-text{
+      position: absolute;
+      top: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      color: white;
+      font-family: "Lato", sans-serif;
+      font-size: 18px;
+      gap: 20px;
+    }
+    .hed-text p{
+      font-size: 15px;
+    }
+    .part2{
+      width: 100%;
+      height: 550px;
+      margin-top: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .p21{
+      width: 100%;
+      height: 55%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding-top: 2%;
+    }
+    .p21 p{
+      width: 50%;
+      text-align: center;
+      
+    }
+    .p21 h2{
+      font-size: 30px;
+      font-weight: 100px;
+    }
+    .p21 i{
+      color: silver;
+    }
+    .p22{
+      width: 60%;
+      height: 45%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .p2pic1{
+      width: 20%;
+      height: 65%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+    .p2pic1 img{
+      width: 100%;
+      height: 100%;
+    }
+    .p2pic1 p{
+      font-size: 18px;
+    }
+    .part3{
+      background-color: black;
+      width: 100%;
+      height: 750px;
+      margin-top: 7%;
+    }
+    .p31{
+      width: 100%;
+      height: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+    .p3text{
+      width: 50%;
+      height: 50%;
+      padding-top: 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      color: white;
+    }
+    .p3text h2{
+      font-size: 30px;
+      font-weight: 100;
+    }
+    .p3text p{
+      font-size: 15px;
+      color: silver;
+    }
+    .p3input{
+      background-color:black;
+      width: 50%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+    }
+    .input1{
+      width: 100%;
+      border: 2px solid black;
+      background-color: white;
+      height: 42px;
+      padding: 1%;
+    }
+    .input2{
+      width: 100%;
+      border: 2px solid black;
+      height: 42px;
+      padding: 1%;
+      background-color: white;
+    }
+    .input3{
+      width: 100%;
+      border: 2px solid black;
+      height: 42px;
+      padding: 1%;
+      background-color: white;
+    }
+    .sol1{
+      width: 10px;
+      height: 10px;
+      font-size: 18px;
+      color: white;
+      margin-left: 25px;
+      background-color: red;
+    }
+    .sol2{
+      width: 10px;
+      height: 10px;
+      font-size: 18px;
+      color: white;
+      margin-left: 25px;
+      background-color: red;
+    }
+    .num{
+      width: 50px;
+      height: 10px;
+      font-size: 20px;
+      color: white;
+      margin-left: 85%;
+      background-color: black;
+      border-radius: 50%;
+    }
+    .p32{
+      width: 100%;
+      height: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+    .card{
+      background-color: black;
+      height: 80%;
+      width: 15%;
+
+    }
+    .c1{
+      width: 100%;
+      height: 50%;
+    }
+    .c1 img{
+      height: 100%;
+      width: 100%;
+    }
+    .c2{
+      width: 100%;
+      height: 50%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding-left: 4%;
+    }
+    .p1{
+      font-size: 18px;
+      font-weight: 900px;
+    }
+    .p2{
+      color: silver;
+    }
+    .c2 button{
+      width: 45%;
+      height: 35px;
+      background-color: black;
+      color: white;
+    }
+    .part4{
+      height: 450px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+    .p41{
+      padding-top: 5%;
+      height: 40%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+    }
+    .p41 h3{
+      font-size: 35px;
+      font-weight: 100;
+    }
+    .p42{
+      width: 100%;
+      height: 60%;
+      display: flex;
+    }
+    .p42text{
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+    }
+    .p42form{
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+
+    }
+    .t1{
+      display: flex;
+      width: 30%;
+      height: 10%;
+    }
+    .t1 p{
+      margin-left: 18px;
+      font-size: 20px;
+      width: 100%;
+    }
+    .t1 img{
+      width:auto ;
+      height: 20px;
+    }
+   .p4f2{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 75%;
+    height: 30%;
+    justify-content: space-between;
+
+   }
+   .p4f2 input{
+    padding: 10px;
+    width: 66%;
+   }
+   .p4f2 button{
+    padding: 10px;
+    margin-left: 52%;
+    width: 80px;
+    color: white;
+    background-color: black;
+    border: none;
+   }
+   .p4f1 input{
+    padding: 10px;
+   }
+   .p4f1{
+    height: 20%;
+   }
+   .part5{
+    height: 800px;
+    width: 100%;
+    background-color: blue;
+    margin-top: 5%;
+   }
+   .part5 img{
+    width: 100%;
+    height: 100%;
+   }
+
+  </style>
+</head>
+<body>
+  <div class="part1">
+    <div class="image">
+      <img src="hed.png" alt="back-image">
+    </div>
+    <div class="hed">
+      <div class="hed1">
+        <p>HOME</p>
+        <p>BAND</p>
+        <P>TOUR</P>
+        <p>CONTACT</p>
+        <p>MORE</p>
+      </div>
+      <div class="hed2">
+        <img src="ser.png" alt="">
+      </div>
+    </div>
+    <div class="hed-text">
+      <h3>Los Angeles</h3>
+      <p>
+        <b>We had the best time playing at Venice Beach!</b>
+      </p>
+    </div>
+  </div>
+  <div class="part2">
+    <div class="p21">
+      <h2>THE BAND</h2>
+      <p>
+        <i>We love music</i>
+      </p>
+      <p>
+        We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+    <div class="p22">
+      <div class="p2pic1">
+        <p>Name</p>
+        <img src="part2pic.png" alt="">
+      </div>
+      <div class="p2pic1">
+        <p>Name</p>
+        <img src="part2pic.png" alt="">
+      </div>
+      <div class="p2pic1">
+        <p>Name</p>
+        <img src="part2pic.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="part3">
+    <div class="p31">
+      <div class="p3text">
+        <h2>TOUR DATES</h2>
+        <p>
+          <i>Remember to book your tickets!</i>
+        </p>
+      </div>
+      <div class="p3input">
+        <div class="input1">
+          <span class="month">September</span>
+          <span class="sol1">Sold out</span>
+        </div>
+        <div class="input2">
+          <span class="month">October</span>
+          <span class="sol2">Sold out</span>
+        </div>
+        <div class="input3">
+          <span class="month">November</span>
+          <span class="num">3</span>
+        </div>
+      </div>
+    </div>
+    <div class="p32">
+      <div class="card">
+        <div class="c1">
+          <img src="cc1.png" alt="">
+        </div>
+        <div class="c2">
+          <p class="p1">New York</p>
+          <p class="p2">Fri 27 Nov 2016</p>
+          <p class="p3">praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+          <button>Buy Tickets</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="c1">
+          <img src="cc2.png" alt="">
+        </div>
+        <div class="c2">
+          <p class="p1">New York</p>
+          <p class="p2">Fri 27 Nov 2016</p>
+          <p class="p3">praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+          <button>Buy Tickets</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="c1">
+          <img src="cc3.png" alt="">
+        </div>
+        <div class="c2">
+          <p class="p1">New York</p>
+          <p class="p2">Fri 27 Nov 2016</p>
+          <p class="p3">praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+          <button>Buy Tickets</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  <div class="part4">
+    <div class="p41">
+      <h3>CONTACT</h3>
+      <p>Fan? Drop a note!</p>
+    </div>
+    <div class="p42">
+      <div class="p42text">
+        <div class="t1">
+          <img src="loc.png" alt="">
+          <p>Chicago, US</p>
+        </div>
+        <div class="t1">
+          <img src="tel.png" alt="">
+          <p>Phone:+00151515</p>
+        </div>
+        <div class="t1">
+          <img src="mess.png" alt="">
+          <p>Email:mail@mail.com</p>
+        </div>
+      </div>
+      <div class="p42form">
+        <div class="p4f1">
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Email">
+        </div>
+        <div class="p4f2">
+          <input type="text" placeholder="Message">
+          <button>SEND</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="part5">
+    <img src="map.png" alt="">
+  </div>
+  
+</body>
+</html>
